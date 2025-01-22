@@ -1,0 +1,19 @@
+apiVersion: v2
+name: vault-app-chart
+description: A Helm chart for deploying HashiCorp Vault and a Go app in a Kubernetes cluster
+type: application
+version: 1.0.0
+appVersion: 1.0.0
+keywords:
+  - vault
+  - hashicorp
+  - kubernetes
+  - helm
+  - go
+  - kv-store
+maintainers:
+  - name: Your Name
+    email: your.email@example.com
+sources:
+  - https://github.com/your-org/vault-app-chart  # Replace with your repository or documentation URL
+icon: https://www.hashicorp.com/images/logos/brand/horizontal/color-hashicorp.svg  # Optional

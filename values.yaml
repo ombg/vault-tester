@@ -1,0 +1,6 @@
+vault:
+  image: "local-registry/vault:latest"
+  token: "your-vault-root-token"
+
+app:
+  image: "local-registry/go-app:latest"
