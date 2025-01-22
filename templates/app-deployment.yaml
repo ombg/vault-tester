@@ -32,6 +32,8 @@ spec:
             secretKeyRef:
               name: vault-token
               key: token
+        - name: VAULT_SECRET_PATH
+          value: "secret/data/myapp"
       volumes:
       - name: data-read
         emptyDir: {}

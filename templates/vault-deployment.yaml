@@ -14,6 +14,13 @@ spec:
       labels:
         app: vault
     spec:
+      initContainers:
+      - name: vault-init
+        image: {{ .Values.vault.initImage }}
+        command: ["sh", "-c", "vault operator init -key-shares=1 -key-threshold=1 -format=json > /vault/data/init-keys.json && vault operator unseal $(jq -r .unseal_keys_b64[0] /vault/data/init-keys.json)"]
+        volumeMounts:
+        - name: vault-data
+          mountPath: /vault/data
       containers:
       - name: vault
         image: {{ .Values.vault.image }}
