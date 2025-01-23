@@ -16,7 +16,7 @@ spec:
         - name: go-app
           image: {{ .Values.app.image }}
           env:
-            - name: VAULT_TOKEN
-              value: {{ .Values.app.vaultToken }}
+            - name: VAULT_ROLE
+              value: "go-app-role"
             - name: VAULT_ADDR
-              value: "http://vault-service:8200"
+              value: "http://vault:8200"
