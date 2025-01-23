@@ -12,6 +12,7 @@ spec:
       labels:
         app: go-app
     spec:
+      serviceAccountName: go-app-sa
       containers:
         - name: go-app
           image: {{ .Values.app.image }}

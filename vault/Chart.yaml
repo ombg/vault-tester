@@ -1,6 +1,6 @@
 apiVersion: v2
-name: vault-app-chart
-description: A Helm chart for deploying HashiCorp Vault and a Go app in a Kubernetes cluster
+name: vault-chart
+description: A Helm chart for deploying HashiCorp Vault in a Kubernetes cluster
 type: application
 version: 1.0.0
 appVersion: 1.0.0
