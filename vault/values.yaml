@@ -2,6 +2,3 @@ vault:
   image: "local-registry/vault:latest"
   initImage: "local-registry/vault:latest"
   token: "your-vault-token"
-
-app:
-  image: "local-registry/go-app:latest"
